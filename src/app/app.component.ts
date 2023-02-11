@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Exercise } from './exercise';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'exercizer';
+  config: boolean = false;
+  exercises: Exercise[] = [{
+    name: 'Abdominal',
+    duration: 30,
+    repetitions: 3,
+    preparations: 15,
+    rest: 30
+  }];
 }
